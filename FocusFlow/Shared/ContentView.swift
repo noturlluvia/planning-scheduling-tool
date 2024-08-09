@@ -20,4 +20,3 @@ struct ContentView_Previews: PreviewProvider {
     }
 }
 
-https://github.com/noturlluvia/planning-scheduling-tool.git
