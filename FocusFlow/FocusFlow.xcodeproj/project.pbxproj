@@ -7,73 +7,85 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FF7EDE902C66C40000055C43 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7EDE8F2C66C40000055C43 /* Tests_iOS.swift */; };
-		FF7EDE9B2C66C40000055C43 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7EDE9A2C66C40000055C43 /* Tests_macOS.swift */; };
-		FF7EDE9D2C66C40000055C43 /* FocusFlowApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7EDE742C66C3FA00055C43 /* FocusFlowApp.swift */; };
-		FF7EDE9E2C66C40000055C43 /* FocusFlowApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7EDE742C66C3FA00055C43 /* FocusFlowApp.swift */; };
-		FF7EDE9F2C66C40000055C43 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7EDE752C66C3FB00055C43 /* ContentView.swift */; };
-		FF7EDEA02C66C40000055C43 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7EDE752C66C3FB00055C43 /* ContentView.swift */; };
-		FF7EDEA12C66C40000055C43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF7EDE762C66C40000055C43 /* Assets.xcassets */; };
-		FF7EDEA22C66C40000055C43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF7EDE762C66C40000055C43 /* Assets.xcassets */; };
+		FF7EDF002C670C1A00055C43 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7EDEFF2C670C1A00055C43 /* Tests_iOS.swift */; };
+		FF7EDF0B2C670C1A00055C43 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7EDF0A2C670C1A00055C43 /* Tests_macOS.swift */; };
+		FF7EDF0D2C670C1A00055C43 /* FocusFlowApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7EDEE42C670C1000055C43 /* FocusFlowApp.swift */; };
+		FF7EDF0E2C670C1A00055C43 /* FocusFlowApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7EDEE42C670C1000055C43 /* FocusFlowApp.swift */; };
+		FF7EDF112C670C1A00055C43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF7EDEE62C670C1A00055C43 /* Assets.xcassets */; };
+		FF7EDF122C670C1A00055C43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF7EDEE62C670C1A00055C43 /* Assets.xcassets */; };
+		FF7EDF252C670C7A00055C43 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7EDF212C670C7A00055C43 /* Task.swift */; };
+		FF7EDF262C670C7A00055C43 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7EDF212C670C7A00055C43 /* Task.swift */; };
+		FF7EDF272C670C7A00055C43 /* TaskCreationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7EDF222C670C7A00055C43 /* TaskCreationView.swift */; };
+		FF7EDF282C670C7A00055C43 /* TaskCreationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7EDF222C670C7A00055C43 /* TaskCreationView.swift */; };
+		FF7EDF292C670C7A00055C43 /* TaskListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7EDF232C670C7A00055C43 /* TaskListView.swift */; };
+		FF7EDF2A2C670C7A00055C43 /* TaskListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7EDF232C670C7A00055C43 /* TaskListView.swift */; };
+		FF7EDF2B2C670C7A00055C43 /* MainScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7EDF242C670C7A00055C43 /* MainScreenView.swift */; };
+		FF7EDF2C2C670C7A00055C43 /* MainScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7EDF242C670C7A00055C43 /* MainScreenView.swift */; };
+		FFBDB4D42C67260300574B1C /* CountdownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBDB4D32C67260300574B1C /* CountdownView.swift */; };
+		FFBDB4D52C67260300574B1C /* CountdownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBDB4D32C67260300574B1C /* CountdownView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		FF7EDE8C2C66C40000055C43 /* PBXContainerItemProxy */ = {
+		FF7EDEFC2C670C1A00055C43 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = FF7EDE6F2C66C3FA00055C43 /* Project object */;
+			containerPortal = FF7EDEDF2C670C0F00055C43 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = FF7EDE7A2C66C40000055C43;
+			remoteGlobalIDString = FF7EDEEA2C670C1A00055C43;
 			remoteInfo = "FocusFlow (iOS)";
 		};
-		FF7EDE972C66C40000055C43 /* PBXContainerItemProxy */ = {
+		FF7EDF072C670C1A00055C43 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = FF7EDE6F2C66C3FA00055C43 /* Project object */;
+			containerPortal = FF7EDEDF2C670C0F00055C43 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = FF7EDE822C66C40000055C43;
+			remoteGlobalIDString = FF7EDEF22C670C1A00055C43;
 			remoteInfo = "FocusFlow (macOS)";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		FF7EDE742C66C3FA00055C43 /* FocusFlowApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusFlowApp.swift; sourceTree = "<group>"; };
-		FF7EDE752C66C3FB00055C43 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		FF7EDE762C66C40000055C43 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		FF7EDE7B2C66C40000055C43 /* FocusFlow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FocusFlow.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		FF7EDE7E2C66C40000055C43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FF7EDE832C66C40000055C43 /* FocusFlow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FocusFlow.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		FF7EDE852C66C40000055C43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FF7EDE862C66C40000055C43 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
-		FF7EDE8B2C66C40000055C43 /* Tests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		FF7EDE8F2C66C40000055C43 /* Tests_iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOS.swift; sourceTree = "<group>"; };
-		FF7EDE912C66C40000055C43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FF7EDE962C66C40000055C43 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		FF7EDE9A2C66C40000055C43 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
-		FF7EDE9C2C66C40000055C43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF7EDEE42C670C1000055C43 /* FocusFlowApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusFlowApp.swift; sourceTree = "<group>"; };
+		FF7EDEE62C670C1A00055C43 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FF7EDEEB2C670C1A00055C43 /* FocusFlow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FocusFlow.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF7EDEEE2C670C1A00055C43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF7EDEF32C670C1A00055C43 /* FocusFlow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FocusFlow.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF7EDEF52C670C1A00055C43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF7EDEF62C670C1A00055C43 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		FF7EDEFB2C670C1A00055C43 /* Tests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF7EDEFF2C670C1A00055C43 /* Tests_iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOS.swift; sourceTree = "<group>"; };
+		FF7EDF012C670C1A00055C43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF7EDF062C670C1A00055C43 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF7EDF0A2C670C1A00055C43 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
+		FF7EDF0C2C670C1A00055C43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF7EDF212C670C7A00055C43 /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		FF7EDF222C670C7A00055C43 /* TaskCreationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskCreationView.swift; sourceTree = "<group>"; };
+		FF7EDF232C670C7A00055C43 /* TaskListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskListView.swift; sourceTree = "<group>"; };
+		FF7EDF242C670C7A00055C43 /* MainScreenView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainScreenView.swift; sourceTree = "<group>"; };
+		FFBDB4D32C67260300574B1C /* CountdownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		FF7EDE782C66C40000055C43 /* Frameworks */ = {
+		FF7EDEE82C670C1A00055C43 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FF7EDE802C66C40000055C43 /* Frameworks */ = {
+		FF7EDEF02C670C1A00055C43 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FF7EDE882C66C40000055C43 /* Frameworks */ = {
+		FF7EDEF82C670C1A00055C43 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FF7EDE932C66C40000055C43 /* Frameworks */ = {
+		FF7EDF032C670C1A00055C43 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -83,70 +95,74 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		FF7EDE6E2C66C3FA00055C43 = {
+		FF7EDEDE2C670C0F00055C43 = {
 			isa = PBXGroup;
 			children = (
-				FF7EDE732C66C3FA00055C43 /* Shared */,
-				FF7EDE7D2C66C40000055C43 /* iOS */,
-				FF7EDE842C66C40000055C43 /* macOS */,
-				FF7EDE8E2C66C40000055C43 /* Tests iOS */,
-				FF7EDE992C66C40000055C43 /* Tests macOS */,
-				FF7EDE7C2C66C40000055C43 /* Products */,
+				FF7EDEE32C670C1000055C43 /* Shared */,
+				FF7EDEED2C670C1A00055C43 /* iOS */,
+				FF7EDEF42C670C1A00055C43 /* macOS */,
+				FF7EDEFE2C670C1A00055C43 /* Tests iOS */,
+				FF7EDF092C670C1A00055C43 /* Tests macOS */,
+				FF7EDEEC2C670C1A00055C43 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		FF7EDE732C66C3FA00055C43 /* Shared */ = {
+		FF7EDEE32C670C1000055C43 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				FF7EDE742C66C3FA00055C43 /* FocusFlowApp.swift */,
-				FF7EDE752C66C3FB00055C43 /* ContentView.swift */,
-				FF7EDE762C66C40000055C43 /* Assets.xcassets */,
+				FF7EDEE42C670C1000055C43 /* FocusFlowApp.swift */,
+				FF7EDF242C670C7A00055C43 /* MainScreenView.swift */,
+				FF7EDF212C670C7A00055C43 /* Task.swift */,
+				FFBDB4D32C67260300574B1C /* CountdownView.swift */,
+				FF7EDF222C670C7A00055C43 /* TaskCreationView.swift */,
+				FF7EDF232C670C7A00055C43 /* TaskListView.swift */,
+				FF7EDEE62C670C1A00055C43 /* Assets.xcassets */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
 		};
-		FF7EDE7C2C66C40000055C43 /* Products */ = {
+		FF7EDEEC2C670C1A00055C43 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FF7EDE7B2C66C40000055C43 /* FocusFlow.app */,
-				FF7EDE832C66C40000055C43 /* FocusFlow.app */,
-				FF7EDE8B2C66C40000055C43 /* Tests iOS.xctest */,
-				FF7EDE962C66C40000055C43 /* Tests macOS.xctest */,
+				FF7EDEEB2C670C1A00055C43 /* FocusFlow.app */,
+				FF7EDEF32C670C1A00055C43 /* FocusFlow.app */,
+				FF7EDEFB2C670C1A00055C43 /* Tests iOS.xctest */,
+				FF7EDF062C670C1A00055C43 /* Tests macOS.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		FF7EDE7D2C66C40000055C43 /* iOS */ = {
+		FF7EDEED2C670C1A00055C43 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				FF7EDE7E2C66C40000055C43 /* Info.plist */,
+				FF7EDEEE2C670C1A00055C43 /* Info.plist */,
 			);
 			path = iOS;
 			sourceTree = "<group>";
 		};
-		FF7EDE842C66C40000055C43 /* macOS */ = {
+		FF7EDEF42C670C1A00055C43 /* macOS */ = {
 			isa = PBXGroup;
 			children = (
-				FF7EDE852C66C40000055C43 /* Info.plist */,
-				FF7EDE862C66C40000055C43 /* macOS.entitlements */,
+				FF7EDEF52C670C1A00055C43 /* Info.plist */,
+				FF7EDEF62C670C1A00055C43 /* macOS.entitlements */,
 			);
 			path = macOS;
 			sourceTree = "<group>";
 		};
-		FF7EDE8E2C66C40000055C43 /* Tests iOS */ = {
+		FF7EDEFE2C670C1A00055C43 /* Tests iOS */ = {
 			isa = PBXGroup;
 			children = (
-				FF7EDE8F2C66C40000055C43 /* Tests_iOS.swift */,
-				FF7EDE912C66C40000055C43 /* Info.plist */,
+				FF7EDEFF2C670C1A00055C43 /* Tests_iOS.swift */,
+				FF7EDF012C670C1A00055C43 /* Info.plist */,
 			);
 			path = "Tests iOS";
 			sourceTree = "<group>";
 		};
-		FF7EDE992C66C40000055C43 /* Tests macOS */ = {
+		FF7EDF092C670C1A00055C43 /* Tests macOS */ = {
 			isa = PBXGroup;
 			children = (
-				FF7EDE9A2C66C40000055C43 /* Tests_macOS.swift */,
-				FF7EDE9C2C66C40000055C43 /* Info.plist */,
+				FF7EDF0A2C670C1A00055C43 /* Tests_macOS.swift */,
+				FF7EDF0C2C670C1A00055C43 /* Info.plist */,
 			);
 			path = "Tests macOS";
 			sourceTree = "<group>";
@@ -154,13 +170,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		FF7EDE7A2C66C40000055C43 /* FocusFlow (iOS) */ = {
+		FF7EDEEA2C670C1A00055C43 /* FocusFlow (iOS) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FF7EDEA52C66C40000055C43 /* Build configuration list for PBXNativeTarget "FocusFlow (iOS)" */;
+			buildConfigurationList = FF7EDF152C670C1A00055C43 /* Build configuration list for PBXNativeTarget "FocusFlow (iOS)" */;
 			buildPhases = (
-				FF7EDE772C66C40000055C43 /* Sources */,
-				FF7EDE782C66C40000055C43 /* Frameworks */,
-				FF7EDE792C66C40000055C43 /* Resources */,
+				FF7EDEE72C670C1A00055C43 /* Sources */,
+				FF7EDEE82C670C1A00055C43 /* Frameworks */,
+				FF7EDEE92C670C1A00055C43 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -168,16 +184,16 @@
 			);
 			name = "FocusFlow (iOS)";
 			productName = "FocusFlow (iOS)";
-			productReference = FF7EDE7B2C66C40000055C43 /* FocusFlow.app */;
+			productReference = FF7EDEEB2C670C1A00055C43 /* FocusFlow.app */;
 			productType = "com.apple.product-type.application";
 		};
-		FF7EDE822C66C40000055C43 /* FocusFlow (macOS) */ = {
+		FF7EDEF22C670C1A00055C43 /* FocusFlow (macOS) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FF7EDEA82C66C40000055C43 /* Build configuration list for PBXNativeTarget "FocusFlow (macOS)" */;
+			buildConfigurationList = FF7EDF182C670C1A00055C43 /* Build configuration list for PBXNativeTarget "FocusFlow (macOS)" */;
 			buildPhases = (
-				FF7EDE7F2C66C40000055C43 /* Sources */,
-				FF7EDE802C66C40000055C43 /* Frameworks */,
-				FF7EDE812C66C40000055C43 /* Resources */,
+				FF7EDEEF2C670C1A00055C43 /* Sources */,
+				FF7EDEF02C670C1A00055C43 /* Frameworks */,
+				FF7EDEF12C670C1A00055C43 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -185,71 +201,71 @@
 			);
 			name = "FocusFlow (macOS)";
 			productName = "FocusFlow (macOS)";
-			productReference = FF7EDE832C66C40000055C43 /* FocusFlow.app */;
+			productReference = FF7EDEF32C670C1A00055C43 /* FocusFlow.app */;
 			productType = "com.apple.product-type.application";
 		};
-		FF7EDE8A2C66C40000055C43 /* Tests iOS */ = {
+		FF7EDEFA2C670C1A00055C43 /* Tests iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FF7EDEAB2C66C40000055C43 /* Build configuration list for PBXNativeTarget "Tests iOS" */;
+			buildConfigurationList = FF7EDF1B2C670C1A00055C43 /* Build configuration list for PBXNativeTarget "Tests iOS" */;
 			buildPhases = (
-				FF7EDE872C66C40000055C43 /* Sources */,
-				FF7EDE882C66C40000055C43 /* Frameworks */,
-				FF7EDE892C66C40000055C43 /* Resources */,
+				FF7EDEF72C670C1A00055C43 /* Sources */,
+				FF7EDEF82C670C1A00055C43 /* Frameworks */,
+				FF7EDEF92C670C1A00055C43 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				FF7EDE8D2C66C40000055C43 /* PBXTargetDependency */,
+				FF7EDEFD2C670C1A00055C43 /* PBXTargetDependency */,
 			);
 			name = "Tests iOS";
 			productName = "Tests iOS";
-			productReference = FF7EDE8B2C66C40000055C43 /* Tests iOS.xctest */;
+			productReference = FF7EDEFB2C670C1A00055C43 /* Tests iOS.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
-		FF7EDE952C66C40000055C43 /* Tests macOS */ = {
+		FF7EDF052C670C1A00055C43 /* Tests macOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FF7EDEAE2C66C40000055C43 /* Build configuration list for PBXNativeTarget "Tests macOS" */;
+			buildConfigurationList = FF7EDF1E2C670C1A00055C43 /* Build configuration list for PBXNativeTarget "Tests macOS" */;
 			buildPhases = (
-				FF7EDE922C66C40000055C43 /* Sources */,
-				FF7EDE932C66C40000055C43 /* Frameworks */,
-				FF7EDE942C66C40000055C43 /* Resources */,
+				FF7EDF022C670C1A00055C43 /* Sources */,
+				FF7EDF032C670C1A00055C43 /* Frameworks */,
+				FF7EDF042C670C1A00055C43 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				FF7EDE982C66C40000055C43 /* PBXTargetDependency */,
+				FF7EDF082C670C1A00055C43 /* PBXTargetDependency */,
 			);
 			name = "Tests macOS";
 			productName = "Tests macOS";
-			productReference = FF7EDE962C66C40000055C43 /* Tests macOS.xctest */;
+			productReference = FF7EDF062C670C1A00055C43 /* Tests macOS.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		FF7EDE6F2C66C3FA00055C43 /* Project object */ = {
+		FF7EDEDF2C670C0F00055C43 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1250;
 				LastUpgradeCheck = 1250;
 				TargetAttributes = {
-					FF7EDE7A2C66C40000055C43 = {
+					FF7EDEEA2C670C1A00055C43 = {
 						CreatedOnToolsVersion = 12.5.1;
 					};
-					FF7EDE822C66C40000055C43 = {
+					FF7EDEF22C670C1A00055C43 = {
 						CreatedOnToolsVersion = 12.5.1;
 					};
-					FF7EDE8A2C66C40000055C43 = {
+					FF7EDEFA2C670C1A00055C43 = {
 						CreatedOnToolsVersion = 12.5.1;
-						TestTargetID = FF7EDE7A2C66C40000055C43;
+						TestTargetID = FF7EDEEA2C670C1A00055C43;
 					};
-					FF7EDE952C66C40000055C43 = {
+					FF7EDF052C670C1A00055C43 = {
 						CreatedOnToolsVersion = 12.5.1;
-						TestTargetID = FF7EDE822C66C40000055C43;
+						TestTargetID = FF7EDEF22C670C1A00055C43;
 					};
 				};
 			};
-			buildConfigurationList = FF7EDE722C66C3FA00055C43 /* Build configuration list for PBXProject "FocusFlow" */;
+			buildConfigurationList = FF7EDEE22C670C0F00055C43 /* Build configuration list for PBXProject "FocusFlow" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -257,44 +273,44 @@
 				en,
 				Base,
 			);
-			mainGroup = FF7EDE6E2C66C3FA00055C43;
-			productRefGroup = FF7EDE7C2C66C40000055C43 /* Products */;
+			mainGroup = FF7EDEDE2C670C0F00055C43;
+			productRefGroup = FF7EDEEC2C670C1A00055C43 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FF7EDE7A2C66C40000055C43 /* FocusFlow (iOS) */,
-				FF7EDE822C66C40000055C43 /* FocusFlow (macOS) */,
-				FF7EDE8A2C66C40000055C43 /* Tests iOS */,
-				FF7EDE952C66C40000055C43 /* Tests macOS */,
+				FF7EDEEA2C670C1A00055C43 /* FocusFlow (iOS) */,
+				FF7EDEF22C670C1A00055C43 /* FocusFlow (macOS) */,
+				FF7EDEFA2C670C1A00055C43 /* Tests iOS */,
+				FF7EDF052C670C1A00055C43 /* Tests macOS */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		FF7EDE792C66C40000055C43 /* Resources */ = {
+		FF7EDEE92C670C1A00055C43 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF7EDEA12C66C40000055C43 /* Assets.xcassets in Resources */,
+				FF7EDF112C670C1A00055C43 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FF7EDE812C66C40000055C43 /* Resources */ = {
+		FF7EDEF12C670C1A00055C43 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF7EDEA22C66C40000055C43 /* Assets.xcassets in Resources */,
+				FF7EDF122C670C1A00055C43 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FF7EDE892C66C40000055C43 /* Resources */ = {
+		FF7EDEF92C670C1A00055C43 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FF7EDE942C66C40000055C43 /* Resources */ = {
+		FF7EDF042C670C1A00055C43 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -304,57 +320,65 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		FF7EDE772C66C40000055C43 /* Sources */ = {
+		FF7EDEE72C670C1A00055C43 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF7EDE9F2C66C40000055C43 /* ContentView.swift in Sources */,
-				FF7EDE9D2C66C40000055C43 /* FocusFlowApp.swift in Sources */,
+				FFBDB4D42C67260300574B1C /* CountdownView.swift in Sources */,
+				FF7EDF272C670C7A00055C43 /* TaskCreationView.swift in Sources */,
+				FF7EDF2B2C670C7A00055C43 /* MainScreenView.swift in Sources */,
+				FF7EDF292C670C7A00055C43 /* TaskListView.swift in Sources */,
+				FF7EDF252C670C7A00055C43 /* Task.swift in Sources */,
+				FF7EDF0D2C670C1A00055C43 /* FocusFlowApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FF7EDE7F2C66C40000055C43 /* Sources */ = {
+		FF7EDEEF2C670C1A00055C43 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF7EDEA02C66C40000055C43 /* ContentView.swift in Sources */,
-				FF7EDE9E2C66C40000055C43 /* FocusFlowApp.swift in Sources */,
+				FFBDB4D52C67260300574B1C /* CountdownView.swift in Sources */,
+				FF7EDF282C670C7A00055C43 /* TaskCreationView.swift in Sources */,
+				FF7EDF2C2C670C7A00055C43 /* MainScreenView.swift in Sources */,
+				FF7EDF2A2C670C7A00055C43 /* TaskListView.swift in Sources */,
+				FF7EDF262C670C7A00055C43 /* Task.swift in Sources */,
+				FF7EDF0E2C670C1A00055C43 /* FocusFlowApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FF7EDE872C66C40000055C43 /* Sources */ = {
+		FF7EDEF72C670C1A00055C43 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF7EDE902C66C40000055C43 /* Tests_iOS.swift in Sources */,
+				FF7EDF002C670C1A00055C43 /* Tests_iOS.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FF7EDE922C66C40000055C43 /* Sources */ = {
+		FF7EDF022C670C1A00055C43 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF7EDE9B2C66C40000055C43 /* Tests_macOS.swift in Sources */,
+				FF7EDF0B2C670C1A00055C43 /* Tests_macOS.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		FF7EDE8D2C66C40000055C43 /* PBXTargetDependency */ = {
+		FF7EDEFD2C670C1A00055C43 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = FF7EDE7A2C66C40000055C43 /* FocusFlow (iOS) */;
-			targetProxy = FF7EDE8C2C66C40000055C43 /* PBXContainerItemProxy */;
+			target = FF7EDEEA2C670C1A00055C43 /* FocusFlow (iOS) */;
+			targetProxy = FF7EDEFC2C670C1A00055C43 /* PBXContainerItemProxy */;
 		};
-		FF7EDE982C66C40000055C43 /* PBXTargetDependency */ = {
+		FF7EDF082C670C1A00055C43 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = FF7EDE822C66C40000055C43 /* FocusFlow (macOS) */;
-			targetProxy = FF7EDE972C66C40000055C43 /* PBXContainerItemProxy */;
+			target = FF7EDEF22C670C1A00055C43 /* FocusFlow (macOS) */;
+			targetProxy = FF7EDF072C670C1A00055C43 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		FF7EDEA32C66C40000055C43 /* Debug */ = {
+		FF7EDF132C670C1A00055C43 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -413,7 +437,7 @@
 			};
 			name = Debug;
 		};
-		FF7EDEA42C66C40000055C43 /* Release */ = {
+		FF7EDF142C670C1A00055C43 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -465,7 +489,7 @@
 			};
 			name = Release;
 		};
-		FF7EDEA62C66C40000055C43 /* Debug */ = {
+		FF7EDF162C670C1A00055C43 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -487,7 +511,7 @@
 			};
 			name = Debug;
 		};
-		FF7EDEA72C66C40000055C43 /* Release */ = {
+		FF7EDF172C670C1A00055C43 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -510,7 +534,7 @@
 			};
 			name = Release;
 		};
-		FF7EDEA92C66C40000055C43 /* Debug */ = {
+		FF7EDF192C670C1A00055C43 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -534,7 +558,7 @@
 			};
 			name = Debug;
 		};
-		FF7EDEAA2C66C40000055C43 /* Release */ = {
+		FF7EDF1A2C670C1A00055C43 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -558,7 +582,7 @@
 			};
 			name = Release;
 		};
-		FF7EDEAC2C66C40000055C43 /* Debug */ = {
+		FF7EDF1C2C670C1A00055C43 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -580,7 +604,7 @@
 			};
 			name = Debug;
 		};
-		FF7EDEAD2C66C40000055C43 /* Release */ = {
+		FF7EDF1D2C670C1A00055C43 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -603,7 +627,7 @@
 			};
 			name = Release;
 		};
-		FF7EDEAF2C66C40000055C43 /* Debug */ = {
+		FF7EDF1F2C670C1A00055C43 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -625,7 +649,7 @@
 			};
 			name = Debug;
 		};
-		FF7EDEB02C66C40000055C43 /* Release */ = {
+		FF7EDF202C670C1A00055C43 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -650,52 +674,52 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		FF7EDE722C66C3FA00055C43 /* Build configuration list for PBXProject "FocusFlow" */ = {
+		FF7EDEE22C670C0F00055C43 /* Build configuration list for PBXProject "FocusFlow" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FF7EDEA32C66C40000055C43 /* Debug */,
-				FF7EDEA42C66C40000055C43 /* Release */,
+				FF7EDF132C670C1A00055C43 /* Debug */,
+				FF7EDF142C670C1A00055C43 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FF7EDEA52C66C40000055C43 /* Build configuration list for PBXNativeTarget "FocusFlow (iOS)" */ = {
+		FF7EDF152C670C1A00055C43 /* Build configuration list for PBXNativeTarget "FocusFlow (iOS)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FF7EDEA62C66C40000055C43 /* Debug */,
-				FF7EDEA72C66C40000055C43 /* Release */,
+				FF7EDF162C670C1A00055C43 /* Debug */,
+				FF7EDF172C670C1A00055C43 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FF7EDEA82C66C40000055C43 /* Build configuration list for PBXNativeTarget "FocusFlow (macOS)" */ = {
+		FF7EDF182C670C1A00055C43 /* Build configuration list for PBXNativeTarget "FocusFlow (macOS)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FF7EDEA92C66C40000055C43 /* Debug */,
-				FF7EDEAA2C66C40000055C43 /* Release */,
+				FF7EDF192C670C1A00055C43 /* Debug */,
+				FF7EDF1A2C670C1A00055C43 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FF7EDEAB2C66C40000055C43 /* Build configuration list for PBXNativeTarget "Tests iOS" */ = {
+		FF7EDF1B2C670C1A00055C43 /* Build configuration list for PBXNativeTarget "Tests iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FF7EDEAC2C66C40000055C43 /* Debug */,
-				FF7EDEAD2C66C40000055C43 /* Release */,
+				FF7EDF1C2C670C1A00055C43 /* Debug */,
+				FF7EDF1D2C670C1A00055C43 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FF7EDEAE2C66C40000055C43 /* Build configuration list for PBXNativeTarget "Tests macOS" */ = {
+		FF7EDF1E2C670C1A00055C43 /* Build configuration list for PBXNativeTarget "Tests macOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FF7EDEAF2C66C40000055C43 /* Debug */,
-				FF7EDEB02C66C40000055C43 /* Release */,
+				FF7EDF1F2C670C1A00055C43 /* Debug */,
+				FF7EDF202C670C1A00055C43 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = FF7EDE6F2C66C3FA00055C43 /* Project object */;
+	rootObject = FF7EDEDF2C670C0F00055C43 /* Project object */;
 }
