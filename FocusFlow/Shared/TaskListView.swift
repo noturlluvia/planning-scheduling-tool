@@ -3,7 +3,6 @@
 //  FocusFlow
 //
 //  Created by Lluvia Jing on 8/9/24.
-//
 
 import SwiftUI
 
@@ -11,53 +10,66 @@ struct TaskListView: View {
     @Binding var tasks: [Task]
     var onTaskTap: (Task) -> Void
     var onTaskDone: (Task) -> Void
-    
+    var onSubTaskTap: (Task, SubTask) -> Void
+    var onSubTaskDone: (Task, SubTask) -> Void
+
     var body: some View {
         ForEach(tasks) { task in
             VStack(alignment: .leading) {
                 HStack {
-                    Circle()
-                        .fill(task.priority.color)
-                        .frame(width: 10, height: 10)
-                    Text(task.title)
-                        .font(.headline)
-                    Spacer()
-                    Button(action: { onTaskDone(task) }) {
+                    Button(action: {
+                        onTaskDone(task)
+                    }) {
                         Image(systemName: task.isCompleted ? "checkmark.circle.fill" : "circle")
-                            .foregroundColor(.primary)
+                            .foregroundColor(task.priority.color)
                     }
+                    .buttonStyle(PlainButtonStyle())
+
+                    Text(task.title)
+                        .strikethrough(task.isCompleted)
+                        .font(.title3)
+
+                    Spacer()
+
+                    Button(action: {
+                        onTaskTap(task)
+                    }) {
+                        Image(systemName: "info.circle")
+                    }
+                    .padding(.leading, 5)
                 }
-                .padding(.vertical, 2)
-                
-                ForEach(task.subTasks) { subTask in
-                    HStack {
-                        Text(subTask.title)
-                        Spacer()
-                        Button(action: {
-                            // Call function to open CountdownView and start timer
-                            showCountdownView(for: subTask)
-                        }) {
-                            Text("Start Timer")
-                                .foregroundColor(.blue)
+                .padding(.bottom, 5) // Add some spacing below the task title
+
+                VStack(alignment: .leading) {
+                    ForEach(task.subTasks) { subTask in
+                        HStack {
+                            Button(action: {
+                                onSubTaskDone(task, subTask)
+                            }) {
+                                Image(systemName: subTask.isCompleted ? "checkmark.circle.fill" : "circle")
+                                    .foregroundColor(.blue)
+                            }
+                            .buttonStyle(PlainButtonStyle())
+
+                            Text("\(subTask.title) (\(String(format: "%.1f", subTask.timeBlocks)) \(subTask.timeBlocks > 1 ? "hours" : "hour"))")  // Fix decimal places
+
+                            Spacer()
+
+                            Button(action: {
+                                onSubTaskTap(task, subTask)
+                            }) {
+                                Text("Start Timer")
+                            }
+                            .font(.caption)
                         }
                     }
                 }
+                .padding(.leading, 30) // Adjust padding to align subtasks correctly under the task
             }
-            .padding(.bottom, 8)
-            .onTapGesture {
-                onTaskTap(task)
-            }
+            .padding(.vertical, 5)
         }
-    }
-
-    private func showCountdownView(for subTask: SubTask) {
-        // Open the CountdownView here (example placeholder function)
-        // This would likely involve updating a binding in the parent view to show a sheet
-    }
-}
-
-struct TaskListView_Previews: PreviewProvider {
-    static var previews: some View {
-        TaskListView(tasks: .constant([Task(title: "Sample Task")]), onTaskTap: { _ in }, onTaskDone: { _ in })
+        .onDelete { indexSet in
+            tasks.remove(atOffsets: indexSet)
+        }
     }
 }

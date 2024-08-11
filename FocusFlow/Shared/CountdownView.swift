@@ -3,7 +3,6 @@
 //  FocusFlow
 //
 //  Created by Lluvia Jing on 8/9/24.
-//
 
 import SwiftUI
 
@@ -13,30 +12,46 @@ struct CountdownView: View {
     var body: some View {
         VStack {
             Text(subTask.title)
-                .font(.largeTitle)
-                .padding()
+                .font(.title)
+                .padding(.bottom, 20)
 
-            Text("Time Remaining: \(formatTime(timeRemaining: subTask.timeRemaining))")
-                .font(.system(size: 48, weight: .bold, design: .monospaced))
-                .padding()
+            Text("Remaining Focus Time: \(formatTime(timeRemaining: subTask.timerManager.timeRemaining))")
+                .font(.title2)
+                .foregroundColor(.red)
+                .padding(.bottom, 20)
 
-            Button(subTask.timerRunning ? "Stop Timer" : "Start Timer") {
-                if subTask.timerRunning {
+            HStack {
+                Button("Stop Timer") {
                     subTask.stopTimer()
-                } else {
-                    subTask.startTimer { updatedSubTask in
-                        self.subTask = updatedSubTask
+                }
+                .padding()
+                .background(Color.red)
+                .foregroundColor(.white)
+                .cornerRadius(8)
+
+                Button("Resume Timer") {
+                    subTask.startTimer {
+                        self.subTask = subTask
                     }
                 }
+                .padding()
+                .background(Color.green)
+                .foregroundColor(.white)
+                .cornerRadius(8)
             }
-            .padding(.top, 20)
+            .padding()
         }
+        .padding()
         .onAppear {
-            // Automatically start the timer when the view appears
             if !subTask.timerRunning {
-                subTask.startTimer { updatedSubTask in
-                    self.subTask = updatedSubTask
+                subTask.startTimer {
+                    self.subTask = subTask
                 }
+            }
+        }
+        .onDisappear {
+            if subTask.timerRunning {
+                subTask.stopTimer()
             }
         }
     }
@@ -50,8 +65,9 @@ struct CountdownView: View {
 }
 
 struct CountdownView_Previews: PreviewProvider {
+    @State static var subTask = SubTask(title: "Sample Sub-Task", timeBlocks: 1.0) // Test with 1 hour
+
     static var previews: some View {
-        CountdownView(subTask: .constant(SubTask(title: "Sample Sub-Task", timeBlocks: 2)))
+        CountdownView(subTask: $subTask)
     }
 }
-

@@ -3,9 +3,7 @@
 //  FocusFlow
 //
 //  Created by Lluvia Jing on 8/9/24.
-//
 
-import Foundation
 import SwiftUI
 
 struct TaskCreationView: View {
@@ -17,7 +15,7 @@ struct TaskCreationView: View {
     @Environment(\.presentationMode) var presentationMode // To dismiss the view
     var task: Task?
     var onSave: (Task) -> Void
-    
+
     var body: some View {
         NavigationView {
             Form {
@@ -29,16 +27,18 @@ struct TaskCreationView: View {
                         Text(priority.rawValue.capitalized).tag(priority)
                     }
                 }
-                
+
                 Section(header: Text("Sub-Tasks")) {
                     ForEach(subTasks.indices, id: \.self) { index in
                         VStack(alignment: .leading) {
                             TextField("Sub-Task Name", text: $subTasks[index].title)
-                            Stepper("Time Blocks: \(subTasks[index].timeBlocks) hours", value: $subTasks[index].timeBlocks, in: 1...10)
+                            Stepper(value: $subTasks[index].timeBlocks, in: 0.5...10, step: 0.5) {
+                                Text("Time Blocks: \(String(format: "%.1f", subTasks[index].timeBlocks)) hours")
+                            }
                         }
                     }
                     .onDelete(perform: deleteSubTask)
-                    
+
                     Button(action: addSubTask) {
                         Label("Add Sub-Task", systemImage: "plus")
                     }
@@ -61,11 +61,11 @@ struct TaskCreationView: View {
             }
         }
     }
-    
+
     private func addSubTask() {
-        subTasks.append(SubTask(title: "New Sub-Task", timeBlocks: 2))
+        subTasks.append(SubTask(title: "New Sub-Task", timeBlocks: 1.0)) // Default to 1 hour
     }
-    
+
     private func deleteSubTask(at offsets: IndexSet) {
         subTasks.remove(atOffsets: offsets)
     }

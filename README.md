@@ -1,23 +1,18 @@
-
 # FocusFlow
 
-**FocusFlow** is an iOS task management app designed to help users manage and track their tasks and subtasks effectively. With built-in prioritization, countdown timers for subtasks, and an intuitive interface, FocusFlow aims to improve productivity by keeping you organized and focused on what matters most.
+FocusFlow is an iOS task management application designed to help users organize their tasks and subtasks efficiently, with built-in countdown timers for each subtask. The app allows users to manage their tasks with different priorities, track time spent on each subtask, and monitor overall progress.
 
 ## Features
+- Create and manage tasks with custom titles, start dates, due dates, and priority levels.
+- Add and manage subtasks with individual countdown timers.
+- Track the completion of tasks and subtasks.
+- Intuitive UI with dynamic task and subtask organization.
 
-- **Task Management**: Create, edit, and delete tasks with start and due dates.
-- **Subtask Tracking**: Break down tasks into manageable subtasks, each with its own countdown timer.
-- **Priority Levels**: Set priority levels (Low, Normal, High) to organize tasks based on importance, with color-coded indicators.
-- **Countdown Timer**: Start a timer for each subtask and track the time remaining.
-- **Task Completion**: Mark tasks as complete, with automatic updates to task status.
-- **Categorization**: View tasks categorized into "Due Today," "Upcoming Tasks," and "Completed This Week."
-
-## Known Issues (as in Work-In-Progress)
-
-- The countdown timer for subtasks sometimes does not count down as expected.
-- The app may fail to transition to the CountdownView after clicking "Start Timer."
+## Known Issues (Work-In-Progress)
+- Subtask timers do not accurately reflect the time input during subtask creation. Instead, they start with a default time of 1 hour.
 
 ## Installation
+Ensure you have Xcode installed on your macOS machine. Clone this repository, open it in Xcode, and press the Run button.
 
 1. Clone the repository:
 
@@ -42,3 +37,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Contributing
 
 Feel free to submit issues, fork the repository, and send pull requests! Contributions are welcome.
+
+## Contact
+For any inquiries, issues, or feature requests, feel free to open an issue on GitHub or contact the maintainer.
+
