@@ -17,7 +17,7 @@ struct CountdownView: View {
 
             Text("Remaining Focus Time: \(formatTime(timeRemaining: subTask.timerManager.timeRemaining))")
                 .font(.title2)
-                .foregroundColor(.red)
+                .foregroundColor(.gray)
                 .padding(.bottom, 20)
 
             HStack {
@@ -25,7 +25,7 @@ struct CountdownView: View {
                     subTask.stopTimer()
                 }
                 .padding()
-                .background(Color.red)
+                .background(Color.red.opacity(0.6))
                 .foregroundColor(.white)
                 .cornerRadius(8)
 
@@ -35,7 +35,7 @@ struct CountdownView: View {
                     }
                 }
                 .padding()
-                .background(Color.green)
+                .background(Color.blue.opacity(0.4))
                 .foregroundColor(.white)
                 .cornerRadius(8)
             }
