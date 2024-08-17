@@ -8,14 +8,14 @@ FocusFlow is an iOS task management application designed to help users organize 
 - Track the completion of tasks and subtasks.
 - Intuitive UI with dynamic task and subtask organization.
 
-## Known Issues (Work-In-Progress)
-- Subtask timers do not accurately reflect the time input during subtask creation. Instead, they start with a default time of 1 hour.
+### Updates
+- **Resolved Issue**: Enhanced the `TaskCreationView` by adding explicit "Edit" buttons for subtasks, making it easier for users to adjust `timeBlocks` directly.
+- **New Feature WIP**: Plan to add a calendar view to manage and view tasks more visually. This will help users see their tasks laid out over days and weeks, making planning more interactive and accessible.
 
 ## Installation
 Ensure you have Xcode installed on your macOS machine. Clone this repository, open it in Xcode, and press the Run button.
 
 1. Clone the repository:
-
     ```sh
     git clone https://github.com/noturlluvia/planning-scheduling-tool.git
     ```
@@ -40,4 +40,3 @@ Feel free to submit issues, fork the repository, and send pull requests! Contrib
 
 ## Contact
 For any inquiries, issues, or feature requests, feel free to open an issue on GitHub or contact the maintainer.
-
