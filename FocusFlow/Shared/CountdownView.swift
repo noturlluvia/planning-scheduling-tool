@@ -3,6 +3,7 @@
 //  FocusFlow
 //
 //  Created by Lluvia Jing on 8/9/24.
+//
 
 import SwiftUI
 
@@ -44,6 +45,8 @@ struct CountdownView: View {
         .padding()
         .onAppear {
             if !subTask.timerRunning {
+                // Ensure the latest timeRemaining is used
+                subTask.timeRemaining = Int(subTask.timeBlocks * 3600)
                 subTask.startTimer {
                     self.subTask = subTask
                 }

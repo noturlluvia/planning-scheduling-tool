@@ -12,7 +12,11 @@ struct TaskCreationView: View {
     @State private var dueDate: Date = Date()
     @State private var priority: Priority = .normal
     @State private var subTasks: [SubTask] = []
-    @Environment(\.presentationMode) var presentationMode // To dismiss the view
+    @State private var showingTimeBlockInput = false
+    @State private var tempTimeBlocks: Double = 1.0  // Temporary holder for input
+    @State private var selectedSubTaskIndex: Int? = nil  // To identify which subtask is being edited
+
+    @Environment(\.presentationMode) var presentationMode
     var task: Task?
     var onSave: (Task) -> Void
 
@@ -27,29 +31,55 @@ struct TaskCreationView: View {
                         Text(priority.rawValue.capitalized).tag(priority)
                     }
                 }
-
+                
                 Section(header: Text("Sub-Tasks")) {
                     ForEach(subTasks.indices, id: \.self) { index in
-                        VStack(alignment: .leading) {
-                            TextField("Sub-Task Name", text: $subTasks[index].title)
-                            Stepper(value: $subTasks[index].timeBlocks, in: 0.5...10, step: 0.5) {
-                                Text("Time Blocks: \(String(format: "%.1f", subTasks[index].timeBlocks)) hours")
+                        HStack {
+                            VStack(alignment: .leading) {
+                                TextField("Sub-Task Name", text: $subTasks[index].title)
+                                Text("Time Blocks: \(subTasks[index].timeBlocks, specifier: "%.1f") hours")
                             }
+                            Spacer()
+                            Button("Edit") {
+                                self.tempTimeBlocks = subTasks[index].timeBlocks
+                                self.selectedSubTaskIndex = index
+                                self.showingTimeBlockInput = true
+                            }
+                            .buttonStyle(BorderlessButtonStyle())
                         }
                     }
                     .onDelete(perform: deleteSubTask)
-
-                    Button(action: addSubTask) {
-                        Label("Add Sub-Task", systemImage: "plus")
+                    
+                    Button("Add New Sub-Task") {
+                        self.tempTimeBlocks = 1.0  // Default starting value
+                        self.selectedSubTaskIndex = nil
+                        self.showingTimeBlockInput = true
                     }
                 }
             }
             .navigationBarTitle(task == nil ? "Create New Task" : "Edit Task")
             .navigationBarItems(trailing: Button("Save") {
-                let newTask = Task(id: task?.id ?? UUID(), title: title, startDate: startDate, dueDate: dueDate, priority: priority, subTasks: subTasks, isCompleted: task?.isCompleted ?? false)
-                onSave(newTask)
-                presentationMode.wrappedValue.dismiss() // Dismiss the view
+                onSave(Task(id: task?.id ?? UUID(), title: title, startDate: startDate, dueDate: dueDate, priority: priority, subTasks: subTasks, isCompleted: task?.isCompleted ?? false))
+                presentationMode.wrappedValue.dismiss()
             })
+        }
+        .sheet(isPresented: $showingTimeBlockInput) {
+            VStack {
+                Text("Set Time Blocks for Sub-Task")
+                Stepper("Time Blocks: \(tempTimeBlocks, specifier: "%.1f") hours", value: $tempTimeBlocks, in: 0.5...10, step: 0.5)
+                Button("Confirm") {
+                    if let index = selectedSubTaskIndex {
+                        subTasks[index].timeBlocks = tempTimeBlocks
+                    } else {
+                        let newSubTask = SubTask(title: "New Sub-Task", timeBlocks: tempTimeBlocks)
+                        subTasks.append(newSubTask)
+                    }
+                    showingTimeBlockInput = false
+                }
+                .padding()
+            }
+            .frame(width: 300, height: 200) // Adjust the size of the sheet if needed
+            .padding()
         }
         .onAppear {
             if let task = task {
@@ -60,10 +90,6 @@ struct TaskCreationView: View {
                 subTasks = task.subTasks
             }
         }
-    }
-
-    private func addSubTask() {
-        subTasks.append(SubTask(title: "New Sub-Task", timeBlocks: 1.0)) // Default to 1 hour
     }
 
     private func deleteSubTask(at offsets: IndexSet) {
