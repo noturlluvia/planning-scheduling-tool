@@ -9,7 +9,7 @@ FocusFlow is an iOS task management application designed to help users organize 
 - Intuitive UI with dynamic task and subtask organization.
 
 ### Updates
-- **Resolved Issue**: Enhanced the `TaskCreationView` by adding explicit "Edit" buttons for subtasks, making it easier for users to adjust `timeBlocks` directly.
+- **Resolved Issue**: Enhanced subtask management including more granulared time blocks editing for timer countdown.
 - **New Feature WIP**: Plan to add a calendar view to manage and view tasks more visually. This will help users see their tasks laid out over days and weeks, making planning more interactive and accessible.
 
 ## Installation
