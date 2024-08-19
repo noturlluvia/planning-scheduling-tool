@@ -71,7 +71,7 @@ struct TaskCreationView: View {
                     if let index = selectedSubTaskIndex {
                         subTasks[index].timeBlocks = tempTimeBlocks
                     } else {
-                        let newSubTask = SubTask(title: "New Sub-Task", timeBlocks: tempTimeBlocks)
+                        let newSubTask = SubTask(title: "", timeBlocks: tempTimeBlocks)
                         subTasks.append(newSubTask)
                     }
                     showingTimeBlockInput = false

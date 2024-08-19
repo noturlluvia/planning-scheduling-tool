@@ -24,14 +24,21 @@ Ensure you have Xcode installed on your macOS machine. Clone this repository, op
 
 2. Open the project in Xcode.
 
-### Running the App on an iOS Device
-To run the app on your iOS device instead of a simulator, follow these steps:
+### Running the App on an iOS Device or iPad
+To run the app on your iOS device or iPad, follow these steps:
 
-1. Connect your iOS device to your Mac via a USB cable.
-2. Unlock your device and, if prompted, choose to trust this computer.
-3. Select your device in Xcode's top device toolbar.
-4. Press the 'Run' button in Xcode to build and install the app on your device.
-5. If necessary, go to `Settings` > `General` > `Device Management` on your iOS device, and trust your developer profile before opening the app.
+1. **Connect Your Device**:
+   - Connect your iOS device or iPad to your Mac via a USB cable.
+   - Unlock your device and, if prompted, choose to trust this computer.
+   
+2. **Select Your Device**:
+   - In Xcode's top device toolbar, select your connected device (iPhone or iPad).
+   
+3. **Build and Install the App**:
+   - Press the 'Run' button in Xcode to build and install the app on your device.
+   
+4. **Trust Your Developer Profile**:
+   - If necessary, go to `Settings` > `General` > `Device Management` on your iOS device, and trust your developer profile before opening the app.
 
 **Note**: This project is developed under Xcode 13.4.1 and does not support iOS versions beyond iOS 15.
 
