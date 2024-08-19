@@ -17,12 +17,20 @@ FocusFlow is an iOS task management application designed to help users organize 
 ### Setting Up Your Development Environment
 Ensure you have Xcode installed on your macOS machine. Clone this repository, open it in Xcode, and press the Run button.
 
-1. Clone the repository:
+1. **Clone the Repository:**
     ```sh
     git clone https://github.com/noturlluvia/planning-scheduling-tool.git
     ```
 
-2. Open the project in Xcode.
+2. **Open the Project in Xcode:**
+
+   - Open `FocusFlow.xcodeproj` in Xcode.
+   - Ensure that all dependencies are resolved and the project builds successfully.
+
+3. **Run the App:**
+
+   - Select your target device or simulator in Xcode.
+   - Click the run button to build and launch the app.
 
 ### Running the App on an iOS Device or iPad
 To run the app on your iOS device or iPad, follow these steps:
